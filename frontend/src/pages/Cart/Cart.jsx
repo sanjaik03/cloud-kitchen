@@ -46,7 +46,7 @@ const Cart = () => {
           })}
         </div>
 
-        {/* Cart Summary Section */}
+      
         <div className="cart-summary">
           <h3>Cart Summary</h3>
           <div className="cart-summary-details">

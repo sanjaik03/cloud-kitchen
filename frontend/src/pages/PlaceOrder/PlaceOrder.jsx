@@ -7,14 +7,13 @@ const PlaceOrder = () => {
   const { cartItems, food_list } = useContext(StoreContext);
   const navigate = useNavigate();
 
-  // Calculate Subtotal
+  
   const subtotal = food_list.reduce((acc, item) => {
     return acc + item.price * (cartItems[item._id] || 0);
   }, 0);
 
-  // Calculate Total (Can add tax, delivery charges if needed)
-  const total = subtotal; // For now, total is just the subtotal
-
+  
+  const total = subtotal; 
   return (
     <form className="place-order">
       <div className="place-order-left">
@@ -42,7 +41,7 @@ const PlaceOrder = () => {
       </div>
 
       <div className="place-order-right">
-        {/* Cart Summary Section */}
+      
         <div className="cart-summary">
           <h3>Cart Summary</h3>
           <div className="cart-summary-details">
